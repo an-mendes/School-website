@@ -14,7 +14,6 @@ function validateForm() {
         return false;
     }
 
-    // You can add more specific validation for email format if needed
 
     if (phone.trim() === "") {
         alert("Molimo unesite broj telefona.");
@@ -32,8 +31,13 @@ function validateForm() {
             return false;
         }
     }
+    if (phone.length < 8) {
+        alert("Broj telefona mora imati najmanje 8 znamenki.");
+        return false;
+    }
 
-    // Additional validation can be added based on your requirements
-
-    return true; // If all validations pass, the form will be submitted
+    else {
+        alert("Uspješno ste se prijavili na aktivnost.");
+        return true;
+    } 
 }
