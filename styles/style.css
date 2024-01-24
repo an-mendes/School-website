@@ -1,0 +1,459 @@
+/* Variables */
+:root {
+    --primary-color: #099;
+    --secondary-color: rgb(238,219,151);
+    --text-color: #fff;
+    --accent-color: rgb(119,110,76);
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    gap: 15px;
+    width: 50%;
+    z-index: 1;
+}
+
+.nav-item {
+    position: relative;
+}
+
+nav ul li a,
+nav ul li span {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    transform: translate(-25%, 0);
+    border-radius: 0.5rem;
+    width: 130px; /* Adjust the width as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.dropdown a {
+    display: block;
+    padding: 0.5rem 0; /* Add padding to the dropdown links */
+}
+
+.nav-item:hover .dropdown {
+    display: block;
+}
+
+.dropdown a:hover {
+    color: var(--secondary-color);
+}
+
+.nav-item a:hover, .nav-item span:hover {
+    color: var(--secondary-color);
+}
+
+
+
+
+/* Banner */
+
+.banner {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #FFF;
+}
+
+.banner img {
+    width: 100%;
+    height: 88vh;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10rem;
+}
+
+
+.section1 {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+
+.arrow-button {
+    font-size: 80px;
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black background */
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.3s; /* Smooth transition for background color */
+    z-index: 1;
+}
+
+.arrow-button:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}
+
+.left-arrow {
+    right: 140vh; /* Adjust as needed */
+}
+
+.right-arrow {
+    left: 140vh; /* Adjust as needed */
+}
+/* Main */
+.section1 h3{
+    color: #4d5656;
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+.section1 p {
+    color: #788c8a;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.section1 button {
+    padding: 21px 34px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: Comfortaa;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: #fff;
+    background-color: #099;
+    border-color: #099;
+    margin-left: 40%;
+    margin-right: 45%;
+    margin-top: 3%;
+    width: 20%;
+}
+
+.section1 button:hover {
+    background-color: #fff;
+    color: #099;
+    border-color: #099;
+}
+
+
+/* Socials */
+.socials-container {
+    position: relative;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.socials-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(191, 176, 120, 0.4); /* Add the tint effect */
+    z-index: 2;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Text color */
+    z-index: 3;
+}
+
+.banner-content h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.banner-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.banner-content .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content .icons img {
+    width: 40px; /* Adjust icon size as needed */
+    margin: 0 10px; /* Adjust spacing between icons */
+}
+/* Charity Section */
+.charity-section {
+    text-align: center;
+    padding: 50px;
+    background-color: var(--secondary-color);
+}
+
+.charity-section h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.charity-section p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.donate-button a {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.donate-button a:hover {
+    background-color: #555;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    color: white;
+    background-color: var(--accent-color);
+}
+
+.footer-section {
+    max-width: 600px;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-section .icons {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.footer-section .icons a {
+    margin-right: 10px;
+}
+
+.footer-section img {
+    max-width: 30px;
+}
+
+.footer-section p {
+    margin-bottom: 5px;
+}
+
+.footer-section a {
+    text-decoration: bold;
+    color: white;
+}
+
+
+/* o-nama */
+.about-section .professors-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.about-section .professor {
+    text-align: center;
+    margin: 20px;
+}
+
+.about-section .professor img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.about-section .professor h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.about-section .professor p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.about-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* about-us students */
+.about-section .students-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.about-section .student {
+    text-align: center;
+    margin: 20px;
+}
+
+.about-section .student img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.about-section .student h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.about-section .student p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* about-us parents */
+.about-section .parents-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.about-section .parent {
+    text-align: center;
+    margin: 20px;
+}
+
+.about-section .parent h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.about-section .parent p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.about-section .parent ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-section .parent ul li {
+    margin-bottom: 8px;
+}
+
+/* raspored-tjelesni */
+.schedule-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.schedule-section .donate-button a {
+}
+.schedule-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.schedule-section th, .schedule-section td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.schedule-section th {
+    background-color: #f2f2f2;
+}
+
+.schedule-section tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+
+
+
+
