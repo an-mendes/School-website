@@ -643,3 +643,34 @@ footer {
     background-color: #f5f5f5;
 }
 
+
+
+/* media queries */
+@media (max-width: 768px) {
+    nav ul {
+        width: 100%;
+    }
+
+    .section1 {
+        margin: 5%;
+    }
+
+    .section1 button {
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
+
+    .left-arrow, .right-arrow {
+        display: none; /* Hide arrows on smaller screens */
+    }
+
+    .banner-text {
+        font-size: 5rem; /* Adjust font size for smaller screens */
+    }
+
+    .socials-container {
+        max-height: 300px; /* Adjust max-height for smaller screens */
+    }
+}
+
