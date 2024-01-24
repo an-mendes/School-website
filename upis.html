@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="styles/style.css">
-        <script src="scripts/imageSwitch.js" defer></script>
+        <script src="scripts/validateForm.js" defer></script>
         <title>OŠ Zagreb - O nama</title>
     </head>
     <body>
@@ -33,33 +33,46 @@
                 </ul>
             </nav>
         </header>
-
         <main>
-            <section class="news-section">
-                <h2>Najnovije Vijesti</h2>
+            <section class="registration-section">
+                <h2>Registracija za Tjelesne Aktivnosti</h2>
         
-                <div class="news-article">
-                    <img src="static/news1.jpg" alt="Vijest 1">
-                    <h3>Obnovljeni Školski Dvorac</h3>
-                    <p>Datum objave: 5. ožujka 2024.</p>
-                    <p>Opis vijesti: Otvorena je obnovljena školska zgrada koja sada nudi moderno okruženje za učenje.</p>
-                    <a href="#">Pročitaj više</a>
-                </div>
-        
-                <div class="news-article">
-                    <img src="static/news2.jpg" alt="Vijest 2">
-                    <h3>Uskoro Sportki Turnir</h3>
-                    <p>Datum objave: 10. ožujka 2024.</p>
-                    <p>Opis vijesti: Pripreme za sportski turnir su u punom jeku, prijavite se i pokažite svoje sportsko umijeće.</p>
-                    <a href="#">Pročitaj više</a>
-                </div>
-        
-                <!-- Add more news articles as needed -->
-        
+                <form class="registration-form" id="registrationForm" onsubmit="return validateForm()">
+                    <div>
+                        <label for="fullName">Ime i Prezime:</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="phone">Broj Telefona:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div>
+                        <label for="activity">Odaberite Aktivnost:</label>
+                        <select id="activity" name="activity" required>
+                            <option value="fizicko-vjezbanje">Fizičko Vježbanje</option>
+                            <option value="gimnastika">Gimnastika</option>
+                            <option value="ples">Ples</option>
+                            <option value="ples">Joga</option>
+                            <option value="ples">Borilačke Vještine</option>
+                            <option value="ples">Kondicijski Trening</option>
+                            <option value="ples">Aerobik</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message">Dodatna Pitanja ili Napomene:</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <div class="submit-button">
+                        <button type="submit">Pošalji</button>
+                    </div>
+                </form>
             </section>
-        
-        </main>
 
+        </main>
         <footer>
             <div class="footer-section">
                 <h3>PRONAĐITE NAS ONLINE</h3>
