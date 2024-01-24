@@ -6,6 +6,33 @@
     --accent-color: rgb(119,110,76);
 }
 
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Comfortaa Light'), local('Comfortaa-Light'),
+         url('path-to-your-font/Comfortaa-Light.woff2') format('woff2'),
+         url('path-to-your-font/Comfortaa-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Comfortaa Regular'), local('Comfortaa-Regular'),
+         url('path-to-your-font/Comfortaa-Regular.woff2') format('woff2'),
+         url('path-to-your-font/Comfortaa-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Comfortaa Bold'), local('Comfortaa-Bold'),
+         url('path-to-your-font/Comfortaa-Bold.woff2') format('woff2'),
+         url('path-to-your-font/Comfortaa-Bold.woff') format('woff');
+}
+
 p {
     margin: 0;
     padding: 0;
@@ -16,6 +43,7 @@ p {
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Comfortaa', sans-serif;
 }
 
 /* Header */
