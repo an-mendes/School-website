@@ -26,6 +26,13 @@ function validateForm() {
         return false;
     }
 
+    for (i = 0; i < fullName.length; i++) {
+        if (fullName[i] in [1,2,3,4,5,6,7,8,9,0]) {
+            alert("Ime i prezime ne mogu sadržavati brojeve.");
+            return false;
+        }
+    }
+
     // Additional validation can be added based on your requirements
 
     return true; // If all validations pass, the form will be submitted
